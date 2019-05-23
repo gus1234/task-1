@@ -8,7 +8,11 @@
  * @returns {Number} Сумма аргументов
  */
 function abSum(a, b) {
-    // Ваше решение
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        throw new TypeError('аргумент неверного типа');
+    }
+
+    return a + b;
 }
 
 /**
@@ -19,7 +23,7 @@ function abSum(a, b) {
  * @returns {Number} Век, полученный из года
  */
 function centuryByYear(year) {
-    // Ваше решение
+    // решение
 }
 
 /**
@@ -30,7 +34,7 @@ function centuryByYear(year) {
  * @returns {Number} Число Фибоначчи, находящееся на n-ой позиции
  */
 function fibonacciSequence(n) {
-    // Ваше решение
+    // решение
 }
 
 /**
@@ -40,7 +44,7 @@ function fibonacciSequence(n) {
  * @returns {(Any[])[]} Транспонированная матрица размера NxM
  */
 function matrixTransposition(matrix) {
-    // Ваше решение
+    // решение
 }
 
 /**
@@ -50,7 +54,7 @@ function matrixTransposition(matrix) {
  * @returns {Number} Количество улыбающихся смайликов в строке
  */
 function smilesEntry(text) {
-    // Ваше решение
+    // решение
 }
 
 module.exports = {
@@ -59,4 +63,4 @@ module.exports = {
     fibonacciSequence,
     matrixTransposition,
     smilesEntry
-};
+}
